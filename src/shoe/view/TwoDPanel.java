@@ -37,9 +37,11 @@ public class TwoDPanel
 	changeButton = new JButton("change the indicated shoe");
 	displayButton = new JButton("Display the indicated shoe");
 	
-	setupTable();
+	
 	setupPanel();
+	setupLayout();
 	setupListeners();
+	setupTable();
 	}
 	
 	/**
@@ -56,6 +58,7 @@ public class TwoDPanel
 	private void setupPanel()
 	{
 		this.setLayout(baseLayout);
+		this.add(currentShoe);
 		this.add(shoeTable);
 		this.add(columnField);
 		this.add(rowField);

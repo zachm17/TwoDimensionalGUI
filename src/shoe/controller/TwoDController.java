@@ -23,14 +23,14 @@ public class TwoDController
 	
 	private void setupArray()
 	{
-		for(int row = 0; row < myShoes.length; row+)
+		for(int row = 0; row < myShoes.length; row++)
 		{
-			for(int col = 0; col < myShoes[0]).length; col++)
+			for(int col = 0; col < myShoes[0].length; col++)
 			{
 				myShoes[row][col] = new Shoe();
 				if(col % 2 == 0)
 				{
-					myShoes[row][col].setsizeOfShoes(col + 5);
+					myShoes[row][col].setSizeOfShoes(col + 5);
 				}
 				else
 				{
