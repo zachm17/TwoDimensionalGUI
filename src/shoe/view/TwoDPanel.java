@@ -2,6 +2,7 @@ package shoe.view;
 
 import javax.swing.JButton;
 import javax.swing.JLabel;
+import javax.swing.JPanel;
 import javax.swing.JTable;
 import javax.swing.JTextField;
 import javax.swing.SpringLayout;
@@ -11,7 +12,7 @@ import shoe.controller.TwoDController;
 
 
 
-public class TwoDPanel
+public class TwoDPanel extends JPanel
 {
 
 	private TwoDController baseController;
@@ -57,13 +58,14 @@ public class TwoDPanel
 
 	private void setupPanel()
 	{
-		this.setLayout(baseLayout);
+		
 		this.add(currentShoe);
 		this.add(shoeTable);
 		this.add(columnField);
 		this.add(rowField);
 		this.add(editField);
 		this.add(changeButton);
+		this.setLayout(baseLayout);
 	}
 	
 	private void setuptLayout()

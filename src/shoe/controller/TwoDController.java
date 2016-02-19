@@ -1,8 +1,9 @@
 package shoe.controller;
 
+import java.awt.Color;
+
 import shoe.model.Shoe;
 import shoe.view.TwoDFrame;
-import java.awt.Color;
 
 public class TwoDController
 {
