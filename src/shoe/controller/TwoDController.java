@@ -12,12 +12,13 @@ public class TwoDController
 	public TwoDController()
 	{
 		myShoes = new Shoe[2][2];
+		setupArray();
 		baseFrame = new TwoDFrame(this);
 	}
 	
 	public void start()
 	{
-		setupArray();
+		
 	}
 	
 	private void setupArray()
