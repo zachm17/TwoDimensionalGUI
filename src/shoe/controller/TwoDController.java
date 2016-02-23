@@ -22,6 +22,7 @@ public class TwoDController
 		
 	}
 	
+	
 	private void setupArray()
 	{
 		for(int row = 0; row < myShoes.length; row++)

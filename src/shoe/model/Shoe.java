@@ -16,7 +16,7 @@ public class Shoe
 		this.shoeColor = Color.BLACK;
 	}
 	
-	public Shoes(int SizeOfShoes Color shoeColor)
+	public Shoes(int sizeOfShoes Color shoeColor)
 	{
 		this.sizeOfShoe = sizeOfShoe;
 		this.color = color;
@@ -28,4 +28,5 @@ public class Shoe
 				" size. and its color is ";
 				
 	}
+
 }

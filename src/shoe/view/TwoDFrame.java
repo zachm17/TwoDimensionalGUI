@@ -15,7 +15,7 @@ public class TwoDFrame extends JFrame
 	{
 		this.baseController = baseController;
 		basePanel = new TwoDPanel(baseController);
-		setupFrame;
+		setupFrame();
 	}
 
 	

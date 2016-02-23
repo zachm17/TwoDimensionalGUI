@@ -30,7 +30,6 @@ public class TwoDPanel extends JPanel
 	{
 	this.baseController = baseController;
 	baseLayout = new SpringLayout();
-	
 	rowField = new JTextField(5);
 	columnField = new JTextField(5);
 	editField = new JTextField(20);
@@ -39,12 +38,17 @@ public class TwoDPanel extends JPanel
 	displayButton = new JButton("Display the indicated shoe");
 	
 	
+	
+	
+	
+	
+	
 	setupPanel();
-	setupLayout();
 	setupListeners();
 	setupTable();
-	}
 	
+	}
+
 	/**
 	 *  Helper method to load information from the model into the GUI as a 2D array.
 	 */
@@ -70,10 +74,14 @@ public class TwoDPanel extends JPanel
 	
 	private void setuptLayout()
 	{
-		
-		
-		
-		
+		baseLayout.putConstraint(SpringLayout.SOUTH, changeButton, -62, SpringLayout.SOUTH, this);
+		baseLayout.putConstraint(SpringLayout.EAST, changeButton, -43, SpringLayout.EAST, this);
+		baseLayout.putConstraint(SpringLayout.NORTH, currentShoe, 53, SpringLayout.SOUTH, editField);
+		baseLayout.putConstraint(SpringLayout.WEST, currentShoe, 30, SpringLayout.WEST, this);
+		baseLayout.putConstraint(SpringLayout.WEST, editField, 84, SpringLayout.WEST, this);
+		baseLayout.putConstraint(SpringLayout.SOUTH, editField, -162, SpringLayout.SOUTH, this);
+		baseLayout.putConstraint(SpringLayout.NORTH, columnField, 22, SpringLayout.NORTH, this);
+		baseLayout.putConstraint(SpringLayout.WEST, columnField, 97, SpringLayout.EAST, rowField);
 		
 		
 	}
